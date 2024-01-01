@@ -4,5 +4,23 @@
   },
   "platform": {
     "apiRuntime": "node:18"
-  }
+  },
+  "routes": [
+    {
+      "route": "/login",
+      "redirect": "/.auth/login/aad"
+    },
+    {
+      "route": "/.auth/login/twitter",
+      "statusCode": 404
+    },
+    {
+      "route": "/.auth/login/github",
+      "statusCode": 404
+    },
+    {
+      "route": "/logout",
+      "redirect": "/.auth/logout"
+    }
+  ]
 }

@@ -1,4 +1,6 @@
 <template>
+  <a href="/login">Login</a>
+  <a href="/logout">Logout</a>
   <div>
     <div v-for="item in json" :key="item.Id">
       <p>Id: {{ item.Id }}</p>
@@ -8,8 +10,6 @@
 </template>
 
 <script>
-import { ref } from "vue";
-
 export default {
   data() {
     return {
@@ -28,7 +28,7 @@ export default {
       }
     }`;
 
-      const endpoint = "/data-api/graphql";
+      const endpoint = " http://localhost:4280/data-api/graphql";
       fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -40,7 +40,7 @@ export default {
     },
   },
   mounted() {
-    this.requestPost();
+    //this.requestPost();
   },
 };
 </script>
