@@ -28,7 +28,7 @@ export default {
       }
     }`;
 
-      const endpoint = " http://localhost:4280/data-api/graphql";
+      const endpoint = "/data-api/graphql";
       fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -40,7 +40,7 @@ export default {
     },
   },
   mounted() {
-    //this.requestPost();
+    this.requestPost();
   },
 };
 </script>
