@@ -30,7 +30,16 @@
   },
   "entities": {
     "Person": {
-      "source": "Test",
+      "source": "test",
+      "permissions": [
+        {
+          "actions": ["*"],
+          "role": "test"
+        }
+      ]
+    },
+    "Customer": {
+      "source": "customers",
       "permissions": [
         {
           "actions": ["*"],
