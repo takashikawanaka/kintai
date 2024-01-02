@@ -38,7 +38,7 @@
             {
               "action": "*",
               "policy": {
-                "database": "@item.Id eq 1"
+                "database": "@item.Name eq Dheeraj"
               }
             }
           ]
