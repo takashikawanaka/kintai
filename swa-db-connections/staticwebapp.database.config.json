@@ -34,7 +34,7 @@
       "permissions": [
         {
           "actions": ["*"],
-          "role": "test"
+          "role": "test2"
         }
       ]
     },
@@ -42,8 +42,15 @@
       "source": "customers",
       "permissions": [
         {
-          "actions": ["*"],
-          "role": "authenticated"
+          "role": "authenticated",
+          "actions": [
+            {
+              "action": "read",
+              "policy": {
+                "database": "@userDetails eq @item.Email"
+              }
+            }
+          ]
         }
       ]
     }
