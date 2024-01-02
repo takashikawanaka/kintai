@@ -33,8 +33,15 @@
       "source": "test",
       "permissions": [
         {
-          "actions": ["*"],
-          "role": "test2"
+          "role": "authenticated",
+          "actions": [
+            {
+              "action": "*",
+              "policy": {
+                "database": "@item.Id eq 1"
+              }
+            }
+          ]
         }
       ]
     },
@@ -43,14 +50,7 @@
       "permissions": [
         {
           "role": "authenticated",
-          "actions": [
-            {
-              "action": "*",
-              "policy": {
-                "database": "Janet eq @item.Name"
-              }
-            }
-          ]
+          "actions": ["*"]
         }
       ]
     }
