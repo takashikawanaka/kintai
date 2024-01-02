@@ -34,7 +34,7 @@
       "permissions": [
         {
           "actions": ["*"],
-          "role": "test2"
+          "role": "test"
         }
       ]
     },
@@ -45,7 +45,7 @@
           "role": "authenticated",
           "actions": [
             {
-              "action": "read",
+              "action": "*",
               "policy": {
                 "database": "@userDetails eq @item.Email"
               }
