@@ -34,7 +34,7 @@
       "permissions": [
         {
           "actions": ["*"],
-          "role": "test"
+          "role": "test2"
         }
       ]
     },
@@ -47,7 +47,7 @@
             {
               "action": "*",
               "policy": {
-                "database": "@userDetails eq @item.Email"
+                "database": "Janet eq @item.Name"
               }
             }
           ]
