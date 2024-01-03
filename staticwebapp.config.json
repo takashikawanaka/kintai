@@ -2,6 +2,17 @@
   "navigationFallback": {
     "rewrite": "/index.html"
   },
+  "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/25436f27-0214-470d-9d05-614b56f57279/v2.0",
+          "clientIdSettingName": "AZURE_CLIENT_ID",
+          "clientSecretSettingName": "AZURE_CLIENT_SECRET"
+        }
+      }
+    }
+  },
   "platform": {
     "apiRuntime": "node:18"
   },
